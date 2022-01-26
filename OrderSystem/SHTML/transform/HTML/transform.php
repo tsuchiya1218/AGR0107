@@ -27,15 +27,17 @@
     <div id ="wrapper">
         <h1 class = "ts">翻訳しますか?</h1>
         <h2 class = "ts2">한국어로　번역하시겠습니까?</h2>
-        <table>
+        <table class = "bt1">
             <tr>
                 <td> 
-                    <button type="button" onclick="location.href='index.html'">はい</button> </td>
-                    <td><button type="button" onclick="location.href='index.html'">いいえ</td>
-                    </button>                    
-               
-                </tr>
-            </table>
+                    <button type="button" onclick="location.href='index.html'">はい</button>
+                </td>
+                <td>
+                    <button type="button" onclick="location.href='index.html'">いいえ</button>
+                </td>                  
+            </tr>
+        </table>
+
         </div>
         
     </main>
