@@ -5,12 +5,12 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>メインメニュー</title>
-    <link href="./Css/common.css" rel="stylesheet" type="text/css">
+    <link href="../../CSS/common.css" rel="stylesheet" type="text/css">
 
 </head>
 <body>
 	<header>
-        <h1 class="logo"><img src="./img2/Logo.jpg" alt="sagamiya" width="450" height="100"></h1>
+        <h1 class="logo"><img src="../../img2/Logo.jpg" alt="sagamiya" width="450" height="100"></h1>
 
 
         <ul>
@@ -26,9 +26,9 @@
         
         <table border="1" class="table2" >
             <tr>
-                <th><img src="./img2/Logo.jpg" alt="sagamiya" class="gazou"></th>
-                <th><img src="./img2/Logo.jpg" alt="sagamiya" class="gazou"></th>
-                <th><img src="./img2/Logo.jpg" alt="sagamiya" class="gazou"></th>
+                <th><img src="../../img2/Logo.jpg" alt="sagamiya" class="gazou"></th>
+                <th><img src="../../img2/Logo.jpg" alt="sagamiya" class="gazou"></th>
+                <th><img src="../../img2/Logo.jpg" alt="sagamiya" class="gazou"></th>
             </tr>
             <tr align="center">
                 <td>おすすめ</td>
@@ -40,9 +40,9 @@
 
             <table border="1" class="table2" >
                 <tr>
-                    <th><img src="./img2/Logo.jpg" alt="sagamiya" class="gazou"></th>
-                    <th><img src="./img2/Logo.jpg" alt="sagamiya" class="gazou"></th>
-                    <th><img src="./img2/Logo.jpg" alt="sagamiya" class="gazou"></th>
+                    <th><img src="../../img2/Logo.jpg" alt="sagamiya" class="gazou"></th>
+                    <th><img src="../../img2/Logo.jpg" alt="sagamiya" class="gazou"></th>
+                    <th><img src="../../img2/Logo.jpg" alt="sagamiya" class="gazou"></th>
                 </tr>
                 <tr align="center">
                     <td>おすすめ</td>
