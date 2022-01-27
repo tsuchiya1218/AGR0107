@@ -1,0 +1,30 @@
+@charset "UTF-8";
+
+.table{
+    margin: auto;
+}
+.gazou{
+    width :25vw;
+    height :100px;
+}
+.table2{
+    float: left;
+}
+.table3{
+    margin: auto;
+   
+}
+/*全体の画面割合*/
+html,body{
+    height: 100%;
+}
+header{
+    height: 25%;
+}
+main{
+    height: 70%;
+}
+footer{
+    height: 5%;
+    clear: left;
+}
