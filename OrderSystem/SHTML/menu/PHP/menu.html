@@ -5,14 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>商品選択画面</title>
-    <link href="../CSS/common.css" rel="stylesheet" type="text/css">
-    <link href="../CSS/select.css" rel="stylesheet" type="text/css">
+    <link href=".././CSS/common.css" rel="stylesheet" type="text/css">
+    <link href=".././CSS/select.css" rel="stylesheet" type="text/css">
 </head>
 <body>
     <header>
         <!--ロゴ-->
         <p class="logo">
-            <img src="../img/Logo.jpg" alt="ロゴ" title="ロゴ" width="350" height="100">
+            <img src="../../img2/Logo.jpg" alt="ロゴ" title="ロゴ" width="350" height="100">
         </p>
         <!--種別-->
         <ul>
@@ -24,48 +24,42 @@
             <li><a href="#mennrui">麺類</a></li>
         </ul>
     </header>
+
+
+
+
     <main>
         <!--商品画像-->
+    <div class="food">
         <p class="left" id="img">
-            <img src="../img/syouga.jpg" alt="商品" title="商品" width="450" height="300">
+            <img src="../../img2/syouga.jpg" alt="商品" title="商品" width="550" height="350">
         </p>
+
         <!--説明文-->
-        <p class="left" id="img"><font size="6">生姜焼きの説明文<br>
+        <p class="left" id="img"><font size="6">生姜焼きの説明文 500<br>
             1<br>
             2<br>
             3<br>
             4<br>
             5<br>
         </font></p>
+    </div>
         <!--金額-->
-        <p class="left clear" id="sonota"><font size="6">500円</font></p>
+    <div class="left" id="sonota">
+        <button type="button" onclick="location.href='index.html'">戻る</button>  
+    </div>
+    <div class="spinner_area"　id="sonota">
         <!--数量選択ボタン-->
-        <div class="spinner_area"　id="sonota">
-            <input type="input" value="0" class="counter1" data-max="9" data-min="0">
-            <input type="button" value="＋" class="btnspinner" data-cal="1" data-target=".counter1">
-            <input type="button" value="－" class="btnspinner" data-cal="-1" data-target=".counter1">
-        </div>
-        <!--戻る-->
-        <div class="left clear" id="sonota">
-            <table>
-                <tr>
-                    <td> 
-                        <button type="button" onclick="location.href='index.html'">戻る</button>
-                    </td>
-                </tr>
-            </table>
-        </div>
-        <!--カートへ追加-->
-        <div class="left" id="sonota">
-            <table>
-                <tr>
-                    <td> 
-                        <button type="button" onclick="location.href='index.html'">カートへ追加</button>
-                    </td>
-                </tr>
-            </table>
-        </div>
+        <input type="button" value="＋" class="btnspinner" data-cal="1" data-target=".counter1">
+        <input type="input" value="0" class="counter1" data-max="9" data-min="0">
+        <input type="button" value="－" class="btnspinner" data-cal="-1" data-target=".counter1">
+        <button type="button" onclick="location.href='index.html'">カートへ追加</button>
+    </div>
+        
     </main>
+
+
+
     <footer>
 
     </footer>
