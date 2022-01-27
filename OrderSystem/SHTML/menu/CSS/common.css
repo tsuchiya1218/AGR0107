@@ -21,6 +21,21 @@ footer{
    
 }
 
+/*全体の画面割合*/
+html,body{
+    height: 100%;
+}
+header{
+    height: 30%;
+}
+body{
+    height: 70%;
+}
+footer{
+    height: 0%;
+}
+
+
 /*種別の選択*/
 ul {
     list-style-type: none;
