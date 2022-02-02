@@ -6,25 +6,50 @@
 .gazou{
     width :25vw;
     height :100px;
+	display: flex;
+	flex-wrap: wrap;
 }
 .table2{
     float: left;
 }
-.table3{
-    margin: auto;
-   
-}
+
 /*全体の画面割合*/
 html,body{
     height: 100%;
 }
-header{
-    height: 25%;
-}
-main{
-    height: 70%;
-}
+
 footer{
     height: 5%;
     clear: left;
 }
+
+
+
+.table3{
+    text-align: center;
+    list-style-type: none;
+    padding: 0;
+    overflow: hidden;
+    background-color: #131314;
+    white-space: nowrap;
+    border-right: 1px solid #bbbbbb;
+    width: 20vw;
+    white-space: nowrap;
+    
+    }
+    .table3 td {
+        color: white;
+        text-decoration: none
+    }
+    
+    .table3 td:hover:not(.active) {
+        background-color: #a9bce2;
+    }
+    
+    .table3 td.active {
+        background-color: #da3c41;
+    }
+    
+    .table3 a {
+        color:white
+    }
