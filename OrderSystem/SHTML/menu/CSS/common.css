@@ -2,11 +2,21 @@
 
 
 
-.logo{
+/*種別の選択*/
+html{
+    width: 100vw;
+}
+
+header{
 	text-align: center;
 }
-/*種別の選択*/
+
+header,main,footer{
+    width: 100vw;
+}
+
 ul {
+   
     list-style-type: none;
     margin: auto;
     padding: 0;
@@ -15,6 +25,7 @@ ul {
     white-space: nowrap;
 }
 li {
+    
     float: left;
     border-right: 1px solid #bbbbbb;
     margin: auto;
