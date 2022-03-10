@@ -1,65 +1,59 @@
+ 
 @charset "UTF-8";
-
+header{
+    text-align: center;
+}
+ 
+ 
 .logo{
-    width                   :50vw;
-    margin                  : auto;
+    text-align: center;
 }
 /*種別の選択*/
-html{
-    width                   : 100vw;
-    
-}
-
-header{
-	text-align              : center;
-}
-
-body{
-    background-image        : url(../../img2/BackGround.jpg);
-    background-repeat       : no-repeat;
-    background-size         : cover;
-    background-position:center center;
-    width                   : 100%;
-    height                  : max-content;
-}
-
-header,main,footer{
-    width                   : 100vw;
-}
-
 ul {
-   
-    list-style-type         : none;
-    margin                  : auto;
-    padding                 : 0;
-    overflow                : hidden;
-    background-color        : #131314;
-    white-space             : nowrap;
+    list-style-type: none;
+    margin: auto;
+    padding: 0;
+    overflow: hidden;
+    background-color: #131314;
+    white-space: nowrap;
+    width: 64%;
+}
+/*種別リストの中央寄せ*/
+.inline-block{
+    text-align: center;
+}
+.inline-block li{
+    display: inline-block;
 }
 li {
-    
-    float                   : left;
-    border-right            : 1px solid #bbbbbb;
-    margin                  : auto;
-    width                   : 16vw;
-    white-space             : nowrap;
-
+    float: left;
+    border-right: 1px solid #bbbbbb;
+    margin: auto;
+    width: 16%;
+    white-space: nowrap;
+ 
 }
 li:last-child {
-    border-right            : none;
+    border-right: none;
 }
 li a {
-    display                 : block;
-    color                   : white;
-    text-align              : center;
-    padding                 : 14px 16px;
-    text-decoration         : none;
-    margin                  : auto;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    margin: auto;
 }
 li a:hover:not(.active) {
-    background-color        : #a9bce2;
+    background-color: #a9bce2;
 }
 .active {
-    background-color        : #da3c41;
+    background-color: #da3c41;
 }
-
+ 
+HTML{
+    background-color: #dddddd;
+}
+  
+ 
+ 

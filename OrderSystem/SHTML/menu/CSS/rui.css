@@ -12,16 +12,16 @@
 .table2{
     width: 14vw;
     float: left;
-    height: 60%;
+    height: 30%;
     margin: auto;
     position: relative;
     left: 17%;
 }
 .table2 th{
-    padding: 40px 30px 5px 30px;
+    padding: 160px 30px 5px 30px;
 }
-/*全体の画面割合*/
  
+/*全体の画面割合*/
 footer{
     height: 5%;
     clear: left;
@@ -41,23 +41,23 @@ footer{
     left: 17%;
     border-collapse: separate;
     border-spacing: 10px;
-}
-.table3 td {
-    background-color: #cccccc;
-    text-decoration: none
-}
+    }
+    .table3 td {
+        background-color: #cccccc;
+        text-decoration: none
+    }
     
-.table3 td:hover:not(.active) {
-       background-color: #99cc66;
-}
- 
-.table3 td.active {
-   background-color: #da3c41;
-}
+    .table3 td:hover:not(.active) {
+        background-color: #99cc66;
+    }
     
-.table3 a {
-   color: black;
-}
+    .table3 td.active {
+        background-color: #da3c41;
+    }
+    
+    .table3 a {
+        color: black;
+    }
  
  
  

@@ -1,7 +1,6 @@
 <?php
 require_once 'Dbconnect.php';
 session_start();
-
 ?>
 
 <!DOCTYPE html>
@@ -11,17 +10,16 @@ session_start();
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>メインメニュー</title>
-    <link href="../CSS/common.css" rel="stylesheet" type="text/css">
+    <link href="..//CSS/common.css" rel="stylesheet" type="text/css">
     <link href="../CSS/index.css" rel="stylesheet" type="text/css">
 
 </head>
 <body>
-
-    <header>
+	<header>
         <h1 class="logo"><img src="../../img2/Logo.png" alt="sagamiya" width="300" height="90"></h1>
 
 
-        <ul class="inline-block">
+        <ul>
             <li><a class="active" href="#syurui">種別</a></li>
             <li><a href="osusume.php">おすすめ</a></li>
             <li><a href="teisyokurui.php">定食類</a></li>
@@ -31,47 +29,15 @@ session_start();
         </ul> 
     </header>
     <main>
-
-
-   
-
     
-    <table class="table2">
+    <table class="table2" >
+
     <?php
         try{
-            $settime=$_SESSION['time'];
-            //echo date("Y/m/d h:i",$settime);
-            //echo $_POST['tablenumber'];
-
-            if(isset($_SESSION["table"])){
-
-            $sql = "INSERT GroupB(Tablenumber,Ordertime) VALUES(".$_POST['tablenumber'].", ".$settime.")";
-            $sth = $pdo -> query($sql);
-
-            $sql = "SELECT * FROM GroupB where Tablenumber in(".$_POST['tablenumber'].")";
-            $stmt = $pdo ->prepare($sql);
-	        $stmt->execute();
-            
-            while($row = $stmt->fetch(PDO::FETCH_ASSOC)){
-                $cart=$row["Groupa"];
-                $_SESSION['cart']=$cart;
-                $_SESSION['cartapl']=$cart;
-                
-
-            unset($_SESSION["table"]);
-            }
-            }
-
-            // $stmt = $pdo->prepare('INSERT INTO GroupB (tablenumber,ordertime) VALUES(:tablenumber, :ordertime,)');
-            // 値をセット
-            // $stmt->bindValue(':tablenumber',$_POST['tablenumber']);
-            // $stmt->bindValue(':ordertime', );
-
             $sql = "SELECT * FROM Product where Product in('s1')";
-          
 	        $stmt = $pdo ->prepare($sql);
 	        $stmt->execute();
-            
+
             while($row = $stmt->fetch(PDO::FETCH_ASSOC)){
                 echo "<tr>\n";
                 #"<form method='post' name='add' action='menu.php'>\n";
@@ -80,11 +46,10 @@ session_start();
                 #"</form>\n";
                 echo "<tr align='center'>\n";
                 echo "<td><font size='5'>".$row["Productname"]."</td>\n";
+               
                 echo "</tr>\n";
                 
-                //echo date("Y/m/d h:i",$settime);
-
-
+                
                 if (isset($_GET['s1'])){
                     $_GET['s1'];
                 }
@@ -125,9 +90,11 @@ session_start();
         }
     ?>
 
-        </table>
+            </table>
+
+
             
-        <table class="table2">
+            <table class="table2" >
     <?php
         try{
             $sql = "SELECT * FROM Product where Product in('s3')";
@@ -156,9 +123,8 @@ session_start();
 
 
     <?php
-
     try{
-        $sql = "SELECT * FROM Product where Product in('s4')";
+            $sql = "SELECT * FROM Product where Product in('s4')";
 	        $stmt = $pdo ->prepare($sql);
 	        $stmt->execute();
 
@@ -175,14 +141,14 @@ session_start();
                 }
             unset($id);
             }
+
         }catch ( PDOException $e ) {
             print "SQLエラー!: " . $e->getMessage () . "<br/>";
             exit();
         }
-        
     ?>
         </table>
-        <table class="table2">
+        <table class="table2" >
 
 
     <?php
@@ -239,19 +205,18 @@ session_start();
         }
     ?>
         </table>
-
+        
         <table height="40" class="table3">
             <tr><td width="300"height="140"><a href ="./call.php">呼び出し</td></tr>
             <tr><td width="300"height="140"><a href ="./transform.php">翻訳</td></tr>
             <tr><td width="300"height="140"><a href ="./cart.php">カート</td></tr>
             <tr><td width="300"height="140"><a href ="./pay.php">会計</td></tr>
         </table>
-
-
     </main>
     <footer class="wrap">
 		<p><small>&copy;Copyright SAGAMIYA All rights reserved.</small>
-        
+        <a href="ren.php">練習</a>
+        <script src="../../JS/menu.js"></script>
 		<p>
 	</footer>
 </body>

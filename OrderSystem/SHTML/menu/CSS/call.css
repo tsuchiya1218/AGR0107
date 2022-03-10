@@ -1,0 +1,40 @@
+.ts{
+    text-align                  :center;
+    font-size: 220%;
+}
+ 
+.ts2{
+    text-align                  :center;
+}
+ 
+ 
+#wrapper{
+    width                   : 500px;
+    margin                  : 5% 30% 0% 30%;
+    padding: 100px;
+    border                  : 5px solid rgb(6, 8, 44) ;
+}
+ 
+.btn1{
+    margin                  : auto;
+}
+ 
+button {
+    background-color        : #cccccc;
+    border                  : 5px;
+    color                   : #000000;
+    padding                 : 15px 32px;
+    text-align              : center;
+    margin                  : 4px 2px;
+    cursor                  : pointer;
+    -webkit-transition-duration: 0.6s;
+    transition-duration     : 0.6s;
+    cursor                  : pointer;
+    /*margin: auto;*/
+    text-align              : center;
+    
+  }
+ 
+button:hover:not(.active) {
+    background-color: #99cc66;
+}
